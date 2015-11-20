@@ -37,7 +37,6 @@ safeResponse = function(){
         list = tmpDom.getElementsByTagName("*");
 
         for (i = list.length - 1; i >= 0; i--) {
-            console.log(parent);
             parent.__removeInvalidAttributes(list[i]);
         }
 
