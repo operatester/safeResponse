@@ -22,8 +22,8 @@ safeResponse = function(){
     }
     
     this.__cleanDomString = function(data) {
-        var tmpDom = document.createElement("div");
-        tmpDom.innerHTML = data;
+        var parser = new DOMParser;
+        var tmpDom = parser.parseFromString(data, "text/html").body;
 
         var list, current, currentHref;
 
