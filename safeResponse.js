@@ -16,7 +16,7 @@ safeResponse = function(){
                 currentAttr === "href" &&
                 /^(#|javascript[:])/gi.test(target.getAttribute("href"))
             ) {
-                target.parentNode.removeChild(currentAttr);
+                target.parentNode.removeChild(target);
             }
         }
     }
